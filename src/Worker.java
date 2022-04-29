@@ -14,4 +14,14 @@ public class Worker extends Person {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String getName() {
+        if (getGender() == 'M') {
+            return  "Mr. " + super.getName();
+        } else {
+            return  "Mrs. " + super.getName();
+        }
+    }
 }
+
